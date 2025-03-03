@@ -50,7 +50,10 @@ docker-compose up -d
 http://<ip>:5601/
 
 ```
-
+## عوض کردن پسورد elastic
+```
+/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic -i
+```
 
 
 برای اتصال Kibana به Elasticsearch با استفاده از **Enrollment Token**، باید در ابتدا در Elasticsearch یک **Enrollment Token** ایجاد کنید. این روش معمولاً برای تنظیم **Elastic Stack Security** و تأمین اتصال امن به Elasticsearch است.
