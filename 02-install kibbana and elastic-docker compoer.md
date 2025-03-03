@@ -143,17 +143,10 @@ http://<ip>:5601/
 #### ۴. **غیرفعال کردن احراز هویت (فقط برای محیط توسعه):**
    - اگر در محیط توسعه هستید و نیازی به احراز هویت ندارید، می‌توانید آن را در Elasticsearch غیرفعال کنید. برای این کار:
      1. وارد کانتینر Elasticsearch شوید:
-        ```bash
-        docker exec -it elasticsearch /bin/bash
-        ```
-     2. فایل `elasticsearch.yml` را ویرایش کنید:
-        ```bash
-        vi config/elasticsearch.yml
-        ```
-     3. خط زیر را اضافه کنید:
-        ```yaml
-        xpack.security.enabled: false
-        ```
+```bash
+docker exec -it elasticsearch /bin/bash
+elasticsearch@27528661d290:~$ echo "xpack.security.enabled: false" >> elasticsearch.yml
+```
      4. Elasticsearch را ری‌استارت کنید:
         ```bash
         docker-compose restart elasticsearch
