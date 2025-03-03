@@ -145,7 +145,7 @@ http://<ip>:5601/
      1. وارد کانتینر Elasticsearch شوید:
 ```bash
 docker exec -it elasticsearch /bin/bash
-elasticsearch@27528661d290:~$ echo "xpack.security.enabled: false" >> elasticsearch.yml
+elasticsearch@27528661d290:~$ echo "xpack.security.enabled: false" >> /config/elasticsearch.yml
 ```
      4. Elasticsearch را ری‌استارت کنید:
         ```bash
