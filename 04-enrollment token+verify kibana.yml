@@ -1,0 +1,7 @@
+```
+docker exec -it elasticsearch bin/elasticsearch-create-enrollment-token -s kibana
+eyJ2ZXIiOiI4LjYuMCIsImFkciI6WyIxNzIuMjkuMC4yOjkyMDAiXSwiZmdyIjoiODYyMjEwN2Q2YjVlZWM5NTVmOGJkMjY3YWViZjZkMWMyNzI0Yzk1ODUxZDE4NzkyN2I2YWJiYTBjYTkwYTlhZSIsImtleSI6IjBxdkZZcFVCRnRUTXFna19sSDNsOjdzSEszQzJpUUNHUjctYXFIY2hwSkEifQ==
+
+docker exec -it kibana bin/kibana-verification-code
+Your verification code is:  793 644 
+```
